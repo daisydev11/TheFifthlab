@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecosystem of Solutions that Work</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <img
+        src="./Images/logo.11d2efe5d8c8895a0c9360b8ade70b3e.svg"
+        alt="Fifthlab logo"
+        class="logo"
+      />
+      <div class="menu-toggle" id="mobile-menu"></div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Insights</a></li>
+        </ul>
+      </nav>
+
+      <button class="get-started-btn">Get Started</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="flex-head">
+        <div>
+          <h1 class="head-text">Ecosystem of Solutions <br />that work</h1>
+          <p class="head-text2">
+            User-centric solutions that make life and business <br />
+            easy.
+          </p>
+          <button class="demo-btn">Book A Demo</button>
+        </div>
+        <div>
+          <img
+            src="./Images/headerBanner.png"
+            alt="Header Banner"
+            class="header-banner"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section">
+      <h2 class="trusted-title">We are currently used & trusted by</h2>
+      <div class="logos-container">
+        <div class="logo-item">
+          <img
+            src="./Images/access-bank..svg"
+            alt="Access Bank"
+            class="access-logo"
+          />
+        </div>
+        <div class="logo-item">
+          <img src="./Images/bankly..svg" alt="Bankly" class="bankly-logo" />
+        </div>
+        <div class="logo-item">
+          <img
+            src="./Images/firstbank.svg"
+            alt="First Bank"
+            class="firstbank-logo"
+          />
+        </div>
+        <div class="logo-item">
+          <img src="./Images/itex.svg" alt="Itex" class="itex-logo" />
+        </div>
+        <div class="logo-item">
+          <img src="./Images/stanbic..svg" alt="Stanbic" class="stanbic-logo" />
+        </div>
+        <div class="logo-item">
+          <img src="./Images/wemaBank..svg" alt="Wema Bank" class="wema-logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Grid Section -->
+    <section class="main-grid">
+      <!-- Left Content -->
+      <div class="left-section">
+        <div class="section2-header">
+          <div class="accent-line"></div>
+          <h2 class="section-title">Be more</h2>
+        </div>
+        <p class="section-description">
+          Live your best life, create more and multiply your impact with the
+          tools and solutions we provide.
+        </p>
+        <img src="./Images/bemore..png" alt="Be More" class="left-image" />
+      </div>
+
+      <!-- Right Content -->
+      <div class="right-section">
+        <img src="./Images/domore..png" alt="Do More" class="top-image" />
+
+        <div class="bottom-content">
+          <div class="section2-header">
+            <div class="accent-line"></div>
+            <h2 class="section-title">Do more</h2>
+          </div>
+          <p class="section-description">
+            The reward for a great idea is the tools to make it happen.<br />
+            We provide you with financial and operational tools <br>that help you do
+            business differently and with ease.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Our Products section -->
+
+    <section class="products-section">
+      <div class="section-header">
+          <h2 class="section-title">Our products</h2>
+          <p class="section-subtitle">
+              We see simplified products and solutions as the foundation for growth and progress in commerce and society.
+          </p>
+      </div>
+
+      <div class="product-tabs">
+          <button class="tab-button" onclick="showTab('billspay')">BillsPay</button>
+          <button class="tab-button" onclick="showTab('smerp')">Smerp</button>
+          <button class="tab-button" onclick="showTab('ucp')">UCP</button>
+          <button class="tab-button" onclick="showTab('finedge')">Finedge</button>
+          <button class="tab-button active" onclick="showTab('kuleanpay')">Kuleanpay</button>
+      </div>
+
+      <div class="tab-content active" id="billspay">
+          <div class="product-content">
+              <div class="content-text">
+                  <h3 class="content-title">Bill presentment & Payment</h3>
+                  <p class="content-description">
+                    BillsNPay is a state-of-the-art unified bill presentation and <br>payment platform which allows B2C and B2B billers to <br> present a safe, secure and easy-to-use hub for customers <br>to view bills.
+                  </p>
+                  <a href="#" class="explore-link">
+                    Explore Billsnpay <span class="arrow">→</span>
+                  </a>
+              </div>
+              <div class="content-image-container">
+                  <img src="./Images/BillsNPay.fd053a316a58e1d4b51f08463882acd0.svg" alt="" class="content-image" />
+              </div>
+          </div>
+      </div>
+
+      <div class="tab-content" id="smerp">
+          <div class="product-content">
+              <div class="content-text">
+                  <h3 class="content-title">Manage business operations</h3>
+                  <p class="content-description">
+                    This is an Enterprise Resource Planning platform built <br>to enable Small and Medium Enterprises (SMEs) <br>manage their business operations efficiently.
+                  </p>
+                  <a href="#" class="explore-link">
+                      Explore smerp <span class="arrow">→</span>
+                  </a>
+              </div>
+              <div class="content-image-container">
+                  <img src="./Images/Smerp.4a62857ae803ee76e7aaabda3156c2eb.svg" alt="" class="content-image" />
+              </div>
+          </div>
+      </div>
+
+      <div class="tab-content" id="ucp">
+          <div class="product-content">
+              <div class="content-text">
+                  <h3 class="content-title">Improve, Automate & Digitize Cooporative Operations</h3>
+                  <p class="content-description">
+                    Unified Cooperative Platform is a core cooperative <br>operations software in patnership with CFAN, to meet <br>the rising and dynamic needs of Cooperative Societies <br>across Africa.
+                  </p>
+                  <a href="#" class="explore-link">
+                      Explore UCP <span class="arrow">→</span>
+                  </a>
+              </div>
+              <div class="content-image-container">
+                  <img src="./Images/UCP.93e014cf5a22d609e8970c31fbc34daf.svg" alt="" class="content-image" />
+              </div>
+          </div>
+      </div>
+
+      <div class="tab-content" id="finedge">
+          <div class="product-content">
+              <div class="content-text">
+                  <h3 class="content-title">Micro Banking</h3>
+                  <p class="content-description">
+                    Mobile Money Operators, Microfinance Banks, Cooperative <br>Societies, Banks and other financial institutions can now <br>automate their processes on a single platform using <br>FinEdge Core Banking Application.
+                  </p>
+                  <a href="#" class="explore-link">
+                      Explore Finedge <span class="arrow">→</span>
+                  </a>
+              </div>
+              <div class="content-image-container">
+                  <img src="./Images/Finedge.db139e79f688ba46ed262bfc9bf431a1.svg" alt="" class="content-image" />
+              </div>
+          </div>
+      </div>
+
+      <div class="tab-content" id="kuleanpay">
+          <div class="product-content">
+              <div class="content-text">
+                  <h3 class="content-title">Managing risk for transacting parties</h3>
+                  <p class="content-description">
+                    This is a fast, trusted, and convenient payment platform that help <br>SMEs to solve the issues around credit risk, fraud and trust when <br>transacting business with third-party. KuleanPay provides a <br>secure platform (leveraging the concept of Escrow) that <br>completely protects both transacting parties.
+                  </p>
+                  <a href="#" class="explore-link">
+                      Explore Kuleanpay <span class="arrow">→</span>
+                  </a>
+              </div>
+              <div class="content-image-container">
+                  <img src="./Images/Kulean.7ddb78836cbb0648992ef7884f3b4a5b.svg" alt="Financial analytics dashboard" class="content-image" />
+              </div>
+          </div>
+      </div>
+  </section>
+
+<!-- Updates and Insight section -->
+
+<section id="container">
+  <div id="header">
+      <h1>Updates & Insights</h1>
+  </div>
+
+  <div class="insights-grid">
+      <!-- Card 1 -->
+      <div class="insight-card card-1">
+        <img src="./Images/1_T8ZY8odPg7fU-gte8O6t-A (1).png" alt="" class="card-image">
+          <div class="card-content">
+              <div class="card-date">
+                  <div class="date-dot"></div>
+                  2024-11-26
+              </div>
+              <h3 class="card-title">Top 5 Benefits of Customizable Banking Solutions for Financial...</h3>
+              <div class="card-source">Fifthlab Africa</div>
+          </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="insight-card card-2">
+          <img src="./Images/1_T8ZY8odPg7fU-gte8O6t-A (1).png" alt="" class="card-image">
+          <div class="card-content">
+              <div class="card-date">
+                  <div class="date-dot"></div>
+                  2024-09-09
+              </div>
+              <h3 class="card-title">Speaking the Language of Innovation: The Role of Tech in Promoting Global...</h3>
+              <div class="card-source">Fifthlab Africa</div>
+          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="insight-card card-3">
+        <img src="./Images/1_T8ZY8odPg7fU-gte8O6t-A (1).png" alt="" class="card-image">
+          <div class="card-content">
+              <div class="card-date">
+                  <div class="date-dot"></div>
+                  2024-07-10
+              </div>
+              <h3 class="card-title">Rain, Rain Go Away! Under SMERP's Roof, No Storm Can Stop...</h3>
+              <div class="card-source">Fifthlab Africa</div>
+          </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="insight-card card-4">
+        <img src="./Images/1_T8ZY8odPg7fU-gte8O6t-A (1).png" alt="" class="card-image">
+          <div class="card-content">
+              <div class="card-date">
+                  <div class="date-dot"></div>
+                  2024-06-28
+              </div>
+              <h3 class="card-title">Making Your Business Our Business; The SMERP Approach</h3>
+              <div class="card-source">Fifthlab Africa</div>
+          </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="insight-card card-5">
+        <img src="./Images/1_T8ZY8odPg7fU-gte8O6t-A (1).png" alt="" class="card-image">
+          <div class="card-content">
+              <div class="card-date">
+                  <div class="date-dot"></div>
+                  2024-06-25
+              </div>
+              <h3 class="card-title">Why Most Financial Institutions Now Offer Internet-based Banking</h3>
+              <div class="card-source">Fifthlab Africa</div>
+          </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="insight-card card-6">
+        <img src="./Images/1_T8ZY8odPg7fU-gte8O6t-A (1).png" alt="" class="card-image">
+          <div class="card-content">
+              <div class="card-date">
+                  <div class="date-dot"></div>
+                  2024-06-20
+              </div>
+              <h3 class="card-title">Revolutionizing Business Solutions with SMERP</h3>
+              <div class="card-source">Fifthlab Africa</div>
+          </div>
+      </div>
+
+      <div class="insight-card card-7">
+        <img src="./Images/1_T8ZY8odPg7fU-gte8O6t-A (1).png" alt="" class="card-image">
+          <div class="card-content">
+              <div class="card-date">
+                  <div class="date-dot"></div>
+                  2024-06-28
+              </div>
+              <h3 class="card-title">RECIPE FOR SUCCESS:</h3>
+              <div class="card-source">Fifthlab Africa</div>
+          </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="insight-card card-8">
+        <img src="./Images/1_T8ZY8odPg7fU-gte8O6t-A (1).png" alt="" class="card-image">
+          <div class="card-content">
+              <div class="card-date">
+                  <div class="date-dot"></div>
+                  2024-06-25
+              </div>
+              <h3 class="card-title">Streamlining Business Operations in Africa: </h3>
+              <div class="card-source">Fifthlab Africa</div>
+          </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="insight-card card-9">
+        <img src="./Images/1_T8ZY8odPg7fU-gte8O6t-A (1).png" alt="" class="card-image">
+          <div class="card-content">
+              <div class="card-date">
+                  <div class="date-dot"></div>
+                  2024-06-20
+              </div>
+              <h3 class="card-title">How Fifthlab is Pioneering Innovative Solutions for Modern Businesses.</h3>
+              <div class="card-source">Fifthlab Africa</div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <button class="explore-more-btn">Explore More</button>
+
+    <section class="cta-section">
+      <div class="cta-container">
+          <div class="cta-content">
+              <h2 class="cta-text">Want to learn more, see our platform in action or request a demo?</h2>
+          </div>
+          <div class="cta-button-container">
+              <button class="cta-button">Book A Demo</button>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- Brand Section -->
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <img src="./Images/logo.11d2efe5d8c8895a0c9360b8ade70b3e.svg" alt="" class="brand-logo">
+                    <div class="brand-address">
+                        Plot 7, Joshua Ebun Ojo Close, off Rufus Giwa. Lekki Phase 1, Lagos Nigeria.
+                    </div>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <!-- <div class="audit-badge">
+                        <div class="audit-logo"></div>
+                        <div class="qr-code"></div>
+                        <div class="audit-text">
+                            <span class="ndpr">NDPR Audit</span>
+                            <span class="compliant">COMPLIANT 2023</span>
+                        </div>
+                    </div> -->
+                    <img src="./Images/Fthlabcompliance.40adf0d29165bfd71e94 (3).png" alt="" class="audit-logo">
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Billsnpay</a></li>
+                    <li><a href="#">Finedge</a></li>
+                    <li><a href="#">UCP</a></li>
+                    <li><a href="#">Smerp</a></li>
+                    <li><a href="#">Kuleanpay</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Reach out Section -->
+            <div class="footer-section">
+                <h3>Reach out</h3>
+                <div class="contact-info">
+                    <div>+234 816 235 2009</div>
+                    <div>hello@thefifthlab.com</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2022 FifthLab™. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+  </body>
+</html>
