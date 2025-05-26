@@ -47,3 +47,25 @@ document.querySelectorAll('.insight-card').forEach(card => {
         this.style.transform = 'translateY(0)';
     });
 });
+
+// Mobile menu toggle
+mobileMenu.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+  
+  // Close mobile menu when clicking on nav links
+  navLinks.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      mobileMenu.classList.remove("active");
+      navLinks.classList.remove("active");
+    }
+  });
+  
+  // Close mobile menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!header.contains(e.target)) {
+      mobileMenu.classList.remove("active");
+      navLinks.classList.remove("active");
+    }
+  });
