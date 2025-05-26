@@ -779,7 +779,7 @@ nav {
   }
   
   .get-started-btn {
-    width: 120px;
+    width: 130px;
     height: 45px;
     font-size: 12px;
   }
@@ -825,6 +825,7 @@ nav {
   .tab-button {
     padding: 10px 16px;
     font-size: 11px;
+    width: 130px;
   }
   
   .product-content {
